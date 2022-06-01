@@ -1,0 +1,21 @@
+<h3>アカウント</h3>
+<div>
+    <%= form_with model: @user do |edit| %>
+        <div>
+            <%=edit.label :avatar_url  ,"アイコン " %><span>必須</span>
+            <%= edit.text_field :avatar_url, placeholder: "アイコン" %>
+        </div>
+        <div>
+            <%=edit.label :user_name  ,"名前 " %><span>必須</span>
+            <%= edit.text_field :user_name, placeholder: "名前を入力" %>
+        </div>
+        <div>
+            <%=edit.label :introduction  ,"自己紹介 " %><span>必須</span>
+            <%= edit.text_area :introduction, placeholder: "自己紹介を入力" %>
+        </div>
+        
+        <div>
+            <%= edit.submit "更新"%>
+        </div>
+    <% end %>
+</div>

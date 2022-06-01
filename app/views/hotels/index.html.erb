@@ -1,0 +1,13 @@
+<h3>検索結果:<%= Hotel.count %></h3>
+<ul>
+    <% @hotels.each do |hotel|%>
+        <button>
+            <img><%= hotel.picture %>
+            <p><%= hotel.roomname %></p>
+            <p><%= hotel.place %></p>
+            <p><%= hotel.price %></p>
+            
+            <p><%= link_to "参照", hotel %></p>
+        </button>
+    <% end %>
+</ul>
