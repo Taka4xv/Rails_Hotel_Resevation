@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   root to: redirect('homes/main')#ルートURLを指定します。(最初に表示する画面)
   get 'sessions/new'
   get 'homes/main'
-  get '/users/:id/edit2', to: 'users#edit2' 
+  # get '/users/:id/edit2', to: 'users#edit2' 
+
   # get 'login', to: "sessions#new"
   # post 'login', to: "sessions#create"
   # delete 'logout', to: "sessions#destroy"

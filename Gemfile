@@ -52,3 +52,5 @@ gem 'rails-i18n', '~> 5.1'
 gem 'pry-rails'
 gem 'autonumeric-rails'#金額入力プラグイン
 gem 'devise'
+gem 'carrierwave'#画像アップロード
+gem 'mini_magick'
