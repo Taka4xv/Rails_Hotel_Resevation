@@ -1,0 +1,39 @@
+<h2>詳細</h2>
+<table>
+    <tr>
+        <th>ルーム名</th>
+        <td><%= @hotel.roomname %></td>
+    </tr>
+    <img><%= @hotel.picture %></img>
+    <tr>
+        <th>住所</th>
+        <td><%= @hotel.place %></td>
+    </tr>
+    <tr>
+        <th>料金</th>
+        <td><%= @hotel.price %></td>
+    </tr>
+    <tr>
+        <th>説明</th>
+        <td><%= @hotel.introduction %></td>
+    </tr>
+    <tr>
+        <th>チェックイン</th>
+        <td></td>
+    </tr>
+    <tr>
+        <th>チェックアウト</th>
+        <td></td>
+    </tr>
+    <tr>
+        <th>人数</th>
+        <td></td>
+    </tr>
+</table>
+
+<div>
+    <ul>
+        <li><%= link_to"予約する", :hotels %></li>
+        <li><%= link_to"一覧に戻る", :hotels %></li>
+    </ul>
+</div>

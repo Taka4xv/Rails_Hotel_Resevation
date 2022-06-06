@@ -1,0 +1,113 @@
+    
+header {
+    width: 100%;
+    padding: 15px;
+    background: black;
+    color: white;
+    height: 64px;
+}
+.Header_Container{
+    display: flex;
+    width: 100%;
+}
+.HeaderNav{
+    display: flex;
+    height: 40px;
+    margin: 10px 0px 10px;
+}
+.Header_Userinfo{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+// ユーザーメニュー
+.menu-list{
+    padding: 20px 0 0;
+    width: 200px;
+}
+#user-name{
+    margin-right: 10px;
+}
+#toggle {
+    display: none;
+    cursor: pointer;
+}
+#menu {
+    display: none;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    z-index: 10000;
+}
+#toggle:checked + #menu {
+    display: block;
+}
+
+// ログイン前の表示
+.Header_buttons{
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    float: left; 
+    margin: 10px;
+    
+}
+#Login{
+    background-color: #99FFFF;
+}
+#Register{
+    background-color: #AAAAAA;    
+}
+
+    
+footer{
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+    
+.partial {
+    border: 1px solid red;
+    padding: 15px;
+}
+
+table th {
+    background-color: #ffdfdf;
+    padding: 10px 20px;
+}
+    
+table td {
+    background-color: #f1c8c861;
+    padding: 10px 20px;
+}
+    
+.notice {
+    background-color: #98ecaa7a;
+    padding: 5px;
+    border: 2px solid #5cd075;
+}
+.CenterDiv{
+    text-align: center;
+    background: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    margin: auto;
+    display: block;
+    width: 500px;
+}

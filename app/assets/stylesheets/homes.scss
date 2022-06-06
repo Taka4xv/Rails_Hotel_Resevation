@@ -1,0 +1,59 @@
+.FirstView {
+    background-image: url(img_cover_top.jpg);
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 554px;
+    background-repeat: no-repeat;
+
+}
+.FirstView_container{
+    margin: 150px 400px 150px 50px;
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+}
+.FirstViewContent_title{
+    margin: 30px;
+    padding-top:  10px;
+}
+.Firstview_Serch{
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.SecondView{
+    margin:  600px 100px 0px;
+}
+
+
+
+.Recommendation_area{
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#tokyo{
+    background-image: url(img_tokyo.jpg);
+}
+#osaka{
+    background-image: url(img_osaka.jpg);
+    margin:  0px 40px 0px;
+}
+#kyoto{
+    background-image: url(img_kyoto.jpg);
+}
+#sapporo{
+    background-image: url(img_sapporo.jpg);
+    margin:  0px 0px 0px 40px;
+}
+.center{
+    margin: 250px 0px 0px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}

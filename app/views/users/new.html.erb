@@ -1,0 +1,33 @@
+<div class=CenterDiv>
+    <h2>新しいアカウントを作成</h2>
+    <% if flash[:notice] %>
+        <p class="notice"><%= flash[:notice] %></p>
+    <% end %>
+    <%= render "shared/error", obj: @user %>
+    <div>
+        <%= form_with model: @user do |new| %>
+            <div>
+                <%=new.label :user_name  ,"必須" %>
+                <%= new.text_field :user_name, placeholder: "ユーザー名" %>
+            </div>
+            <div>
+                <%=new.label :emaile  ,"必須" %>
+                <%= new.email_field :email, placeholder: "メールアドレス" %>
+            </div>
+            <div>
+                <%=new.label :encrypted_password  ,"必須" %>
+                <%= new.password_field :encrypted_password, placeholder: "パスワード" %>
+            </div>
+            <div>
+                <%=new.label :password_confirmation  ,"必須" %>
+                <%= new.password_field :password_confirmation, placeholder: "パスワード確認" %>
+            </div>
+         
+            <div>
+                <%= new.submit "新しいアカウントを作成"%><br>
+                <%= link_to "すでにアカウントをお持ちの方はログインへ" , :users %>
+            </div>
+        <% end %>
+    </div>    
+</div>    
+     

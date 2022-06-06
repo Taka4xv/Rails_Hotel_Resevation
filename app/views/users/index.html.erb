@@ -1,0 +1,39 @@
+<h2>スケジュール一覧</h2>
+    <% if flash[:notice] %>
+      <p class="notice"><%= flash[:notice] %></p>
+    <% end %>
+    <table>
+        <thred>
+            <tr>
+                <th>ID</th>
+                <th>名前</th>
+                <th>メールアドレス</th>
+                <th>パスワード</th>
+                <th>一言</th>
+                <th>アイコン</th>
+                <th>確認</th>
+                <th>編集</th>
+              
+            </tr>
+        </thred>
+        
+        <tbody>
+            <% @users.each do |user|%>
+                <tr>
+                    <th><%= user.id %></th>
+                    <th><%= user.user_name %></th>
+                    <th><%= user.email %></th>
+                    <th><%= user.password %></th>
+                    <th><%= user.introduction %></th>
+                    <th><%= user.avatar_url %></th>
+
+                    <th><%= link_to "参照", user %></th>
+                    <th><%= link_to "編集", [:edit,user] %></th>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+    
+    <p><%= link_to "新規登録", :new_user %></p>
+
+
